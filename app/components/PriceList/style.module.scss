@@ -1,0 +1,99 @@
+@use '../../styles/variables.scss' as vars;
+.tableContainer {
+    padding: 100px;
+    background-color: #f9f9f9;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .title {
+    font-size: 24px;
+    margin-bottom: 20px;
+    text-align: center;
+    color: vars.$dark-color;
+    text-transform: uppercase;
+  }
+  
+  .table {
+    width: 100%;
+    border-collapse: collapse;
+  
+    th,
+    td {
+      border: 1px solid #ddd;
+      padding: 8px;
+      text-align: left;
+    }
+  
+    th {
+      background-color: #f4f4f4;
+      font-weight: bold;
+    }
+  
+    tr:nth-child(even) {
+      background-color: #f9f9f9;
+    }
+  
+    tr:hover {
+      background-color: #f1f1f1;
+    }
+  }
+
+  .percent_information {
+    width: 100%;
+    padding: 10px;
+    font-size: 12px;
+}
+
+  @media (max-width: 768px) {
+    .tableContainer {
+      padding: 20px;
+    }
+    .title {
+      font-size: 20px;
+    }
+  
+    .table {
+      th,
+      td {
+        padding: 10px;
+        font-size: 16px;
+      }
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .title {
+      font-size: 18px;
+    }
+  
+    .table {
+      th,
+      td {
+        padding: 6px;
+        font-size: 14px;
+      }
+    }
+  
+    .tableContainer {
+      padding: 15px;
+    }
+  }
+  
+  @media (max-width: 320px) {
+    .title {
+      font-size: 13px;
+    }
+  
+    .table {
+      th,
+      td {
+        padding: 4px;
+        font-size: 13px;
+      }
+    }
+  
+    .tableContainer {
+      padding: 10px;
+    }
+  }
+  

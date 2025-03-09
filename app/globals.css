@@ -1,0 +1,50 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+body{
+  font-family: "Montserrat";
+  font-weight: 300;
+}
+
+.leaflet-control-attribution, .leaflet-control {
+  display: none;
+}
+ul,li {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+}
+
+
+
+.container {
+  width: 80%;
+  margin: 0 auto;
+}
+
+.title{
+  color: #4e342e;
+  font-family: "Montserrat";
+  font-weight: 500;
+  font-size: 2rem;
+}
+.subtitle{
+  color: #6d4c41;
+  font-size: 1rem; 
+}
+
+.map-container {
+  display: flex;
+  flex-direction: column;
+}
+
+/* map Component styles */
+
+.leaflet-popup-content {
+  max-width: auto !important;
+  max-width: none !important;
+}
