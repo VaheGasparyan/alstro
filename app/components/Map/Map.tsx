@@ -4,7 +4,6 @@ import { useEffect, useRef } from 'react';
 import L from 'leaflet';
 import styles from './style.module.scss';
 import 'leaflet/dist/leaflet.css';
-import endpointImage from '../../assets/images/hero-bg.png';
 
 const MapComponent = () => {
   const mapRef = useRef<HTMLDivElement | null>(null);
@@ -32,18 +31,12 @@ const MapComponent = () => {
 
     const points = [
       { lat: 40.1930833, lng: 44.2628611 },
-      { lat: 45.26271, lng: 38.84290 },
-      // { lat: 45.26271, lng: 38.84290, title: 'Ремонт ключей проспект металлистов 65', image: endpointImage },
     ];
 
-    // <p>${point.title}</p>
 
     points.forEach((point, index) => {
       L.marker([point.lat, point.lng], { icon: customIcon })
         .addTo(map)
-        // .bindPopup(`
-        //     <img src="${imagesSrc[index]}" alt="Местоположение" width="200px" height="100%" />
-        // `);
     });
 
     return () => {

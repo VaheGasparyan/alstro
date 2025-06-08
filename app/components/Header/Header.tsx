@@ -7,7 +7,6 @@ import { IoMdClose } from "react-icons/io";
 import logo from '../../assets/logo/logo.png';
 import Image from 'next/image';
 import Head from 'next/head';
-import { motion } from 'framer-motion'
 
 interface IMenuItem {
     name: string;
@@ -15,6 +14,7 @@ interface IMenuItem {
 }
 const menuItems: IMenuItem[] = [
     { name: 'Экземпляры наших цветов', scrollName: 'beforeAfter' },
+    { name: 'Фотографии', scrollName: '' },
     { name: 'Контакты', scrollName: 'contacts' }
 ];
 

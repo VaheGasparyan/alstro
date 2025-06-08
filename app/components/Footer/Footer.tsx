@@ -51,6 +51,10 @@ const Footer: React.FC<IfooterProp> = ({ scrollRef }) => {
         ]
     };
 
+    const clickToWriteReview = () => {
+        window.location.href = 'mailto:info@alstro.am';
+    };
+
     return (
         <>
             <Head>
@@ -71,7 +75,7 @@ const Footer: React.FC<IfooterProp> = ({ scrollRef }) => {
                         <p className={styles.footer__text}>
                             Армения / Эчмиадзин / село Циацан 
                             <br />
-                            Краснодарский край / станция Калининская
+                            {/* Краснодарский край / станция Калининская */}
                         </p>
                     </div>
                     <div className={styles.footer__section}>
@@ -81,6 +85,15 @@ const Footer: React.FC<IfooterProp> = ({ scrollRef }) => {
                             <li onClick={handleCopy} className={styles.footer__item}>
                                 Телефон: +374 33 01 09 99 <FaRegCopy />
                             </li>
+                            <p style={{ fontWeight: 400 }}>
+                            Если вы хотите оставить отзыв, нажмите{' '}
+                            <strong
+                            onClick={clickToWriteReview}
+                            style={{ fontWeight: '600', cursor: 'pointer' }}
+                            >
+                            Здесь
+                            </strong>
+                        </p>
                         </ul>
                     </div>
                 </div>

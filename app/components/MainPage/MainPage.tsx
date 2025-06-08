@@ -85,7 +85,7 @@ const MainPage = () => {
         {/* <PriceList scrollRef={priceScrollRef} prices={priceList} /> */}
         <AccardionAnswer />
         <VideoPlayer />
-        <ReviewForm scrollRef={reviewsScrollRef} />
+        {/* <ReviewForm scrollRef={reviewsScrollRef} /> */}
         <Footer scrollRef={contactsScrollRef} />
         <ToastContainer />
       </div>

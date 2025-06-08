@@ -1,25 +1,17 @@
 'use client'
 import React from 'react';
 import styles from './style.module.scss';
-import dynamic from 'next/dynamic';
-
-const ReactPlayer = dynamic(() => import('react-player'), {ssr: false});
 
 const VideoPlayer: React.FC = () => {
-
   return (
     <div className={styles.wrapper}>
       <div className={styles.title}>
-        <span>Где мы находимся</span>
+        <span>Сердце нашего производства</span>
       </div>
       <div className={styles.playerWrapper}>
-        <ReactPlayer
-          className={styles.player}
-          url="https://www.youtube.com/watch?v=sFYuUpWQWzE"
-          controls
-          width="100%"
-          height="100%"
-        />
+        <video className={styles.player} controls width="100%" height="100%">
+          <source src="/video/intro.mp4" type="video/mp4" />
+        </video>
       </div>
     </div>
   );
