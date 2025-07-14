@@ -14,8 +14,9 @@ interface IMenuItem {
 }
 const menuItems: IMenuItem[] = [
     { name: 'Экземпляры наших цветов', scrollName: 'beforeAfter' },
-    // { name: 'Фотографии', scrollName: '' },
-    { name: 'Контакты', scrollName: 'contacts' }
+    { name: 'Фотографии', scrollName: 'photos' },
+    { name: 'Контакты', scrollName: 'contacts' },
+    { name: 'О нас', scrollName: 'aboutus' }
 ];
 
 interface IheraderProp {

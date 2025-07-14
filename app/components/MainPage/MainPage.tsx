@@ -5,11 +5,8 @@ import Main from '../main/Main';
 import { Services } from '../Services/Services';
 import Footer from '../Footer/Footer';
 import { useRef, useCallback } from 'react';
-import PriceList from '../PriceList/PriceList';
-import { priceList } from '@/app/constants/priceList';
 import { ToastContainer } from 'react-toastify';
 import AccardionAnswer from '../AccardionAnswer/AccardionAnswer.';
-import ReviewForm from '../ReviewForm/ReviewForm';
 import 'react-toastify/dist/ReactToastify.css';
 import dynamic from 'next/dynamic';
 import Head from 'next/head';
@@ -32,15 +29,17 @@ const MainPage = () => {
   const contactsScrollRef = useRef<HTMLDivElement>(null);
   const reviewsScrollRef = useRef<HTMLDivElement>(null);
   const beforeAfterScrollRef = useRef<HTMLDivElement>(null);
+  const photosScrollRef = useRef<HTMLDivElement>(null);
 
   const handleScroll = useCallback((scrollName: string) => {
     const findedElement = [
-      { name: 'services', ref: serviceScrollRef },
+      { name: 'aboutus', ref: serviceScrollRef },
       { name: 'main', ref: mainScrollRef },
       { name: 'price', ref: priceScrollRef },
       { name: 'contacts', ref: contactsScrollRef },
       { name: 'reviews', ref: reviewsScrollRef },
       { name: 'beforeAfter', ref: beforeAfterScrollRef },
+      { name: 'photos', ref: photosScrollRef }
     ].find((element) => element.name === scrollName);
 
     if (findedElement && findedElement.ref.current) {
@@ -85,7 +84,7 @@ const MainPage = () => {
         <NavigateSocial />
         {/* <PriceList scrollRef={priceScrollRef} prices={priceList} /> */}
         <VideoPlayer />
-        <Photos />
+        <Photos scrollRef={photosScrollRef} />
         <AccardionAnswer />
         {/* <ReviewForm scrollRef={reviewsScrollRef} /> */}
         <Footer scrollRef={contactsScrollRef} />

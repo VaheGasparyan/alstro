@@ -3,34 +3,27 @@ import "./globals.css";
 import MainPage from "./components/MainPage/MainPage";
 
 export const metadata: Metadata = {
-  title: "Новая-Походка: Ремонт обуви и изготовление ключей",
+  title: "Альстромерии — Красота в каждом лепестке",
   description:
-    "Новая Походка — Профессиональный ремонт и реставрация обуви изготовление ключей. Чистка, реставрация и качественное обслуживание обуви. Доверяйте мастерам с опытом!",
+    "Добро пожаловать в мир альстромерий! Галерея ярких фотографий, вдохновения и свежих цветочных идей.",
   openGraph: {
-    title: "Новая Походка Ремонт и реставрация обуви, изготовление ключей",
+    title: "Альстромерии — Галерея и вдохновение",
     description:
-      "Ищете качественный ремонт обуви и ключей? Новая Походка предлагает профессиональное обслуживание и реставрацию обуви в кратчайшие сроки!",
-    url: "https://novayapoxodka.ru",
-    siteName: "Новая Походка Ремонт и реставрация обуви, изготовление ключей",
+      "Погрузитесь в атмосферу нежности и красоты. Альстромерии — галерея лучших цветов для вдохновения и любви.",
+    url: "https://alstro.am",
+    siteName: "Alstro Gallery",
     images: [
       {
-        url: "/images/og-image.jpg", 
+        url: "/images/og-alstro.jpg",
         width: 1200,
         height: 630,
-        alt: "Новая-Походка: ремонт и реставрация обуви, изготовление ключе",
+        alt: "Альстромерия — нежные цветы",
       },
     ],
     type: "website",
   },
-  twitter: {
-    card: "summary_large_image",
-    title: "Новая-Походка: ремонт обуви и ключей",
-    description:
-      "Профессиональный ремонт обуви, реставрация и чистка. Доверяйте мастерам Новая Походка!",
-    images: ["/images/og-image.jpg"],
-  },
   alternates: {
-    canonical: "https://novayapoxodka.ru",
+    canonical: "https://alstro.am",
   },
 };
 
@@ -38,19 +31,34 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
   return (
     <html lang="ru">
       <head>
-      <title>Новая Походка — Ремонт и Реставрация Обуви, Изготовление Ключей в Санкт-Петербурге</title>
-      <meta name="robots" content="index, follow" />
-      <meta name="author" content="Новая походка"/>
-      <meta name="keywords" content="новая походка, Новая Походка, Новая Позодка Санкт Петербург, ремонт обуви санкт петербург, изготовление ключнй санкт петербург, реставрация обувт санкт петербург, реставрация обуви, новая походка, Новая-Походка,  ремонт обуви, изготовление ключей, ремонт обуви сайт, сайт ремонт обуви, новая походка сайт, услуги по ремонту, ключи, обувь, мастерская" />
-      <meta name="description" content="Ремонт обуви, реставрация, изготовление ключей и другие услуги в Санкт-Петербурге. Высокое качество и доступные цены. Новая Походка — ваш мастер по ремонту обуви!" />
-      <meta property="og:title" content="Новая Походка — Ремонт и Реставрация Обуви Изготовление ключей"/>
-      <meta property="og:description" content="Качественный ремонт обуви и изготовление ключей в Санкт-Петербурге. Обращайтесь в Новую Походку для реставрации и ремонта обуви." />
-      <meta property="og:image" content="https://novayapoxodka.ru/favicon.ico" />
-      <meta property="og:url" content="https://novayapoxodka.ru"/>
-      <meta property="og:type" content="website" />
-      <meta name="geo.region" content="RU-SPE" />
-      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-      <meta name="geo.placename" content="Санкт-Петербург" />
+        <title>Альстромерии — Галерея цветов и вдохновение</title>
+        <meta name="robots" content="index, follow" />
+        <meta name="author" content="Alstro Gallery" />
+        <meta
+          name="keywords"
+          content="альстромерия, цветы, галерея альстромерий, фото альстромерии, alstroemeria, alstro gallery, букет альстромерий, композиции из альстромерии, нежные цветы"
+        />
+        <meta
+          name="description"
+          content="Галерея альстромерий — яркие и нежные фотографии, композиции и идеи. Откройте для себя мир этих прекрасных цветов!"
+        />
+        <meta
+          property="og:title"
+          content="Альстромерии — Галерея красоты и вдохновения"
+        />
+        <meta
+          property="og:description"
+          content="Цветочная галерея альстромерий. Вдохновение, утонченность и красота в каждом лепестке."
+        />
+        <meta
+          property="og:image"
+          content="https://alstro.am/images/og-alstro.jpg"
+        />
+        <meta property="og:url" content="https://alstro.am" />
+        <meta property="og:type" content="website" />
+        <meta name="geo.region" content="RU" />
+        <meta name="geo.placename" content="Россия" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <link
           href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600&display=swap"
           rel="stylesheet"

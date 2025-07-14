@@ -1,53 +1,8 @@
 import styles from "./style.module.scss";
-import { IoKeyOutline } from "react-icons/io5";
-import { PiBoot } from "react-icons/pi";
-import { MdOutlineCleanHands } from "react-icons/md";
-import { FaKeycdn } from "react-icons/fa";
-import { IoBagOutline } from "react-icons/io5";
-import { PiCarBattery } from "react-icons/pi";
-import { GiBeltArmor } from "react-icons/gi";
 
 interface IservicesProp {
     scrollRef: React.RefObject<HTMLDivElement>;
 }
-
-const servicesData = [
-    {
-        icon: <PiBoot fontSize={'70px'} />,
-        title: 'Ремонт обуви',
-        description: 'Ремонт обуви быстро и качественно. Восстановление внешнего вида и функциональности.',
-    },
-    {
-        icon: <IoKeyOutline fontSize={'70px'} style={{ marginTop: '10px' }} />,
-        title: 'Изготовление ключей',
-        description: 'Изготовление ключей быстро и качественно. Восстановление работоспособности любых типов ключей.',
-    },
-    {
-        icon: <MdOutlineCleanHands fontSize={'70px'} />,
-        title: 'Химчистка и покраска обуви',
-        description: 'Химчистка и полировка обуви. Уход, восстановление блеска и свежести.',
-    },
-    {
-        icon: <FaKeycdn fontSize={'70px'} />,
-        title: 'Изготовление ключей для домофонов',
-        description: 'Изготовление ключей для домофонов быстро и надежно. Гарантия совместимости и качества.',
-    },
-    {
-        icon: <IoBagOutline fontSize={'70px'} />,
-        title: 'Ремонт сумок и чемоданов',
-        description: 'Восстановление и реставрация аксессуаров, возвращение им прежнего вида и функциональности.',
-    },
-    {
-        icon: <PiCarBattery fontSize={'70px'} />,
-        title: 'Замена батареек',
-        description: 'Предлагаем услугу Замена батареек.',
-    },
-    {
-        icon: <GiBeltArmor fontSize={'70px'} />,
-        title: 'Замена ремешков на часах',
-        description: 'Замена ремешков на часах для восстановления их внешнего вида и удобства ношения.',
-    }
-];
 
 export const Services: React.FC<IservicesProp> = ({ scrollRef }) => {
 
