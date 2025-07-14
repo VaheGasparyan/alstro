@@ -16,6 +16,7 @@ import Head from 'next/head';
 import VideoPlayer from '../VideoPlayer/VideoPlayer';
 import { Suspense } from 'react';
 import NavigateSocial from '../NavigateSocial/NavigateSocial';
+import Photos from '../Photos';
 
 const SliderBlock = dynamic(() => import('../SliderBlock/SliderBlock'), {
   ssr: true,
@@ -83,8 +84,9 @@ const MainPage = () => {
         <Services scrollRef={serviceScrollRef} />
         <NavigateSocial />
         {/* <PriceList scrollRef={priceScrollRef} prices={priceList} /> */}
-        <AccardionAnswer />
         <VideoPlayer />
+        <Photos />
+        <AccardionAnswer />
         {/* <ReviewForm scrollRef={reviewsScrollRef} /> */}
         <Footer scrollRef={contactsScrollRef} />
         <ToastContainer />
