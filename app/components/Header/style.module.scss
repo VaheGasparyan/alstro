@@ -71,6 +71,9 @@
         color: #d7ccc8;
         white-space: nowrap;
         cursor: pointer;
+        word-break: break-word !important;
+        text-wrap: wrap !important;
+        text-align: center !important;
     }
 
     &>p::before {

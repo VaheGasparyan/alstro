@@ -1,7 +1,6 @@
 'use client';
 
 import styles from './style.module.scss';
-import IsOpen from '../isOpen/IsOpen';
 import Head from 'next/head';
 
 interface IheroProp {
@@ -32,12 +31,12 @@ const Main: React.FC<IheroProp> = ({ scrollRef, handleScroll }) => {
                     <div className={styles.hero__content}>
                         <h1 className={styles.hero__title}><span>🌸</span> Альстромерии – символ нежности и кросаты </h1>
 
-                        <div
+                        {/* <div
                             onClick={() => handleScroll('services')}
                             className={styles.hero__btn}
                         >
                             Посмотреть услуги
-                        </div>
+                        </div> */}
                     </div>
                 </section>
             </main>
