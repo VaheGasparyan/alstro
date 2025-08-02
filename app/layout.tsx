@@ -70,7 +70,6 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
       </head>
       <body>
         <MainPage />
-        <div>{children}</div>
       </body>
     </html>
   );

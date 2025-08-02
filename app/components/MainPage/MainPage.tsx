@@ -83,12 +83,10 @@ const MainPage = () => {
         </Suspense>
         <Services scrollRef={serviceScrollRef} />
         <NavigateSocial />
-        {/* <PriceList scrollRef={priceScrollRef} prices={priceList} /> */}
         <VideoPlayer />
         <Photos scrollRef={photosScrollRef} />
         <AccardionAnswer />
         <OurReviews />
-        {/* <ReviewForm scrollRef={reviewsScrollRef} /> */}
         <Footer scrollRef={contactsScrollRef} />
         <ToastContainer />
       </div>

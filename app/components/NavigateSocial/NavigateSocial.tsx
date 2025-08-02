@@ -6,6 +6,7 @@ import { useState } from 'react';
 import SpeedDialAction from '@mui/material/SpeedDialAction';
 import { FaWhatsapp, FaViber } from "react-icons/fa";
 import { MdOutlineAlternateEmail } from "react-icons/md";
+import { FaTelegram } from "react-icons/fa";
 
 
 const StyledSpeedDial = styled(SpeedDial)(({ theme }) => ({
@@ -28,14 +29,15 @@ const StyledSpeedDial = styled(SpeedDial)(({ theme }) => ({
 const navigationSocial = {
   whatsapp: 'https://wa.me/37433010999',
   viber: 'viber://chat?number=%2B37433010999',
-  email: 'mailto:info@alstro.am'
+  email: 'mailto:info@alstro.am',
+  telegram: ''
 };
-
 
 const actions = [
   { icon: <FaWhatsapp style={{ fontSize: '30px', color: 'green' }} />, name: 'Whatsapp' },
   { icon: <FaViber style={{ fontSize: '30px', color: 'purple' }} />, name: 'Viber' },
-  { icon: <MdOutlineAlternateEmail style={{fontSize: '30px', color: 'blue'}}/>, name: 'email'}
+  { icon: <MdOutlineAlternateEmail style={{fontSize: '30px', color: 'blue'}}/>, name: 'Email'},
+   { icon: <FaTelegram style={{fontSize: '30px', color: 'blue'}}/>, name: 'Telegram'}
 ];
 
 const NavigateSocial = () => {
