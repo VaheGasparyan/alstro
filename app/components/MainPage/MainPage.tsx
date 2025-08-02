@@ -21,6 +21,7 @@ const SliderBlock = dynamic(() => import('../SliderBlock/SliderBlock'), {
 });
 
 import styles from './style.module.scss';
+import OurReviews from '../OurReviews';
 
 const MainPage = () => {
   const serviceScrollRef = useRef<HTMLDivElement>(null);
@@ -86,6 +87,7 @@ const MainPage = () => {
         <VideoPlayer />
         <Photos scrollRef={photosScrollRef} />
         <AccardionAnswer />
+        <OurReviews />
         {/* <ReviewForm scrollRef={reviewsScrollRef} /> */}
         <Footer scrollRef={contactsScrollRef} />
         <ToastContainer />

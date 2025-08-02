@@ -12,7 +12,7 @@ const Main: React.FC<IheroProp> = ({ scrollRef, handleScroll }) => {
     return (
         <>
             <Head>
-                <title>Альстромерии – символ нежности и кросаты </title>
+                <title>Альстромерия – символ нежности и красоты</title>
                 <meta name="description" content="Предлагаем услуги по ремонту и реставрации обуви, а также изготовление ключей. График работы с 11:00 до 20:00 без выходных." />
                 <meta name="robots" content="index, follow" />
                 <meta property="og:title" content="Ремонт и реставрация обуви, изготовление ключей" />
@@ -29,7 +29,7 @@ const Main: React.FC<IheroProp> = ({ scrollRef, handleScroll }) => {
 
                 <section ref={scrollRef} className={`container ${styles.hero}`}>
                     <div className={styles.hero__content}>
-                        <h1 className={styles.hero__title}><span>🌸</span> Альстромерии – символ нежности и кросаты </h1>
+                        <h1 className={styles.hero__title}><span>🌸</span>Альстромерия – символ нежности и красоты</h1>
 
                         {/* <div
                             onClick={() => handleScroll('services')}
