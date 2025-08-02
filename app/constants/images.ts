@@ -13,9 +13,11 @@ interface Isliders {
 }
 
 export const sliderImages: Isliders[] = [
-    {before: photo1.src, after: photo2.src},
-    {before: photo3.src, after: photo4.src},
     {before: photo5.src, after: photo6.src},
+    {before: photo3.src, after: photo4.src},
+];
+
+export const sliderImagesSecond: Isliders[] = [
+    {before: photo1.src, after: photo2.src},
     {before: photo7.src, after: photo8.src},
-    // {before: photo31.src, after: photo40.src},
 ];
