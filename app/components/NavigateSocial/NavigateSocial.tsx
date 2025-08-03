@@ -30,7 +30,7 @@ const navigationSocial = {
   whatsapp: 'https://wa.me/37433010999',
   viber: 'viber://chat?number=%2B37433010999',
   email: 'mailto:info@alstro.am',
-  telegram: ''
+  telegram: 'https://t.me/alstro_am'
 };
 
 const actions = [
@@ -59,6 +59,9 @@ const NavigateSocial = () => {
     }
     if(name == 'email') {
       window.location.href = navigationSocial.email
+    }
+    if(name === 'Telegram') {
+      window.location.href = navigationSocial.telegram
     }
   };
 

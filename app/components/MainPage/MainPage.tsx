@@ -86,7 +86,7 @@ const MainPage = () => {
         <VideoPlayer />
         <Photos scrollRef={photosScrollRef} />
         <AccardionAnswer />
-        <OurReviews />
+        {/* <OurReviews /> */}
         <Footer scrollRef={contactsScrollRef} />
         <ToastContainer />
       </div>
