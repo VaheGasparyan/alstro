@@ -4,7 +4,6 @@ import styles from './style.module.scss';
 import { useEffect, useState, useRef } from 'react';
 import { IoMenu } from "react-icons/io5";
 import { IoMdClose } from "react-icons/io";
-import logo from '../../assets/logo/logo.png';
 import Image from 'next/image';
 import Head from 'next/head';
 
@@ -98,12 +97,9 @@ export const Header: React.FC<IheraderProp> = ({ handleScroll }) => {
                     <div onClick={() => handleScroll('main')} style={{
                         cursor: 'pointer'
                     }}>
-                        <Image
-                            // width={58}
-                            // height={50}
+                        <img
                             alt="Logo"
-                            src={logo}
-                            // className={styles.logo__img}
+                            src='/logo/logo.png'
                         />
                     </div>
                     {
